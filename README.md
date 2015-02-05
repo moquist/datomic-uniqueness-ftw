@@ -7,6 +7,7 @@ resolution. Maybe we could improve the docs.
 ## Usage
 
 1. ```(require 'datomic-uniqueness-ftw)```
+1. ```(in-ns 'datomic-uniqueness-ftw)```
 1. ```(step1)```
 1. ```(step2)```
 1. ```(step3)```
