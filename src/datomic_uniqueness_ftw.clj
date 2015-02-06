@@ -67,12 +67,13 @@
       that temporary id will resolve to the existing entity in the
       system. \"
 
-  I think Place 2 is unclear, and would be better if it said:
+  I think Place 2 is unclear, and would be better if it said something
+  like:
     \"If a transaction specifies a temporary id for an entity along
-      with a :db.unique/identity value for an attribute of that
-      entity, and that unique identity value already exists for an
-      entity in the database, then that temporary id will resolve to
-      the existing entity in the system. \"
+      with a value for a :db.unique/identity attribute of that entity,
+      and that unique identity value already exists for an entity in
+      the database, then that temporary id will resolve to the
+      existing entity in the system. \"
   "
   []
   (println @(d/transact db-conn
